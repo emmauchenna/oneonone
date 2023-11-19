@@ -18,8 +18,8 @@ public class Permission {
     private String name;
     private String description;
 
-    @ManyToOne
-    Role role;
+   //@ManyToOne
+   // Role role;
 }
 
 //Father - provideMoney, drive, coking

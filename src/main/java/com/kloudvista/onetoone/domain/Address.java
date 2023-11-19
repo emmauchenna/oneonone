@@ -22,6 +22,9 @@ public class Address {
     private String streetName;
     private String city;
     private String state;
-
     private AddressType addressType;
+
+    @ManyToOne
+    Employee employee;
+
 }

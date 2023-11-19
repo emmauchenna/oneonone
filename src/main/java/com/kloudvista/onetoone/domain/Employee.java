@@ -5,7 +5,9 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 @Data
 @AllArgsConstructor
@@ -25,7 +27,6 @@ public class Employee {
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "fk_bio_id")
     private BioDetail bioDetail;
-
 
     @OneToMany(cascade = CascadeType.ALL) @JoinColumn(name = "fk_id", referencedColumnName = "id")
     List<Address> address;
